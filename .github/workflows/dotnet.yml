@@ -19,11 +19,11 @@ jobs:
         dotnet-version: 3.1.x
     - name: Restore dependencies
       run: |
-        SagasJourney
+        cd SagasJourney
         dotnet restore
     - name: Build
       run: |
-        SagasJourney
+        cd SagasJourney
         dotnet build --no-restore
 #    - name: Test
 #      run: dotnet test --no-build --verbosity normal
